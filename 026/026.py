@@ -8,9 +8,10 @@ import time
 x,y = pyautogui.position()
 pyautogui.rightClick(x,y)
 click=250
-while(click--):
+while(click):
 	x,y = pyautogui.position()
 	p=15
 	pyautogui.click(x,y)
 	print("we are clicking")
-	time.sleep(.6)	
+	time.sleep(.6)
+	click=click-1	
